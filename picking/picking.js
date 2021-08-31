@@ -108,9 +108,9 @@ window.onload = function() {
 	function animate() {
 		requestAnimationFrame( animate );
 		
-		cubes.rotation.y += 0.0007;
-		cubes.rotation.x += 0.0003;
-		cubes.rotation.z += 0.0009;
+		cubes.rotation.y += 0.007;
+		cubes.rotation.x += 0.003;
+		cubes.rotation.z += 0.009;
 		
 		controls.update();
 		renderer.render( scene, camera );
