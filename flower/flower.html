@@ -45,7 +45,7 @@
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: './mosque.gltf'});
+      let flower = new Gltf2Node({url: './sunflower.gltf'});
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({url: './reticle.gltf'});
@@ -139,7 +139,7 @@
       const MAX_ANCHORED_OBJECTS = 30;
       let anchoredObjects = [];
       function addAnchoredObjectsToScene(anchor) {
-        let flower = new Gltf2Node({url: './mosque.gltf'});
+        let flower = new Gltf2Node({url: './sunflower.gltf'});
         scene.addNode(flower);
         anchoredObjects.push({
           anchoredObject: flower,
