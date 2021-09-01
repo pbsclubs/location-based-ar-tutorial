@@ -5,7 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
     <meta name='mobile-web-app-capable' content='yes'>
     <meta name='apple-mobile-web-app-capable' content='yes'>
-    <link rel='stylesheet' href='flower.css'>
+    <link rel='stylesheet' href='./flower.css'>
 
     <title>Hit Test with Anchors</title>
   </head>
@@ -45,10 +45,10 @@
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: 'mosque.gltf'});
+      let flower = new Gltf2Node({url: './mosque.gltf'});
       arObject.addNode(flower);
 
-      let reticle = new Gltf2Node({url: 'reticle.gltf'});
+      let reticle = new Gltf2Node({url: './reticle.gltf'});
       reticle.visible = false;
       scene.addNode(reticle);
       let reticleHitTestResult = null;
@@ -139,7 +139,7 @@
       const MAX_ANCHORED_OBJECTS = 30;
       let anchoredObjects = [];
       function addAnchoredObjectsToScene(anchor) {
-        let flower = new Gltf2Node({url: 'mosque.gltf'});
+        let flower = new Gltf2Node({url: './mosque.gltf'});
         scene.addNode(flower);
         anchoredObjects.push({
           anchoredObject: flower,
